@@ -4,7 +4,7 @@
 1. Instalar TextSharp.LGPLv2.Core con Nuget en Visual Studio en Tools > NugetPacketManager > click en Manage NuGet Packages for Solution,
 Elegir pestaña de Browse y buscar el siguiente paquete e instalarlo:
 ``` 
-TextSharp.LGPLv2.Core 
+iTextSharp.LGPLv2.Core 
 ```
 3. Copiar las dependencias en los .aspx.cs donde ira la implementacion.
 
