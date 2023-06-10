@@ -2,7 +2,9 @@
 # Pasos para implementar el logica de exportar tablas a pdf 
 
 1. Instalar TextSharp.LGPLv2.Core con Nuget en Visual Studio
-``` TextSharp.LGPLv2.Core ```
+``` 
+TextSharp.LGPLv2.Core 
+```
 3. Copiar las dependencias en los .aspx.cs donde ira la implementacion.
 
 ```
