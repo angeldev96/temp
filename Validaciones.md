@@ -6,7 +6,7 @@ Para asegurarnos de que el usuario ingrese solamente letras en un campo (sin nú
 	<label for="exampleInputDireccion">Nombre del alumno</label>  			
 	<asp:TextBox ID="txtnombreAlum" CssClass="form-control" runat="server" autocomplete="off" Text=""></asp:TextBox>
 	<asp:RequiredFieldValidator ID="rfvNombreAlum" runat="server" ControlToValidate="txtnombreAlum" ErrorMessage="Campo obligatorio" ForeColor="Red"></asp:RequiredFieldValidator> 
-	<asp:RegularExpressionValidator ID="regexNombreAlum" runat="server" ControlToValidate="txtnombreAlum" ErrorMessage="Solo se permiten letras en el campo Nombre del alumno" ValidationExpression="^[a-zA-Z\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>  
+	<asp:RegularExpressionValidator ID="regexNombreAlum" runat="server" ControlToValidate="txtnombreAlum" ErrorMessage="Solo se permiten letras" ValidationExpression="^[a-zA-Z\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>  
 </div>
 ```
 
