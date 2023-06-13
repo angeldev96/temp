@@ -30,3 +30,25 @@ Para asegurarnos de que el usuario ingrese solamente números enteros positivos 
 </div>
 ```
 Por favor, ten en cuenta que el ID del `TextBox` debe coincidir con el de `RegularExpressionValidator` y `RequiredFieldValidator`. Esto es necesario para que estos validadores sepan a qué `TextBox` están vinculados. Además, observa que usamos la expresión regular `^\d+$` para validar que la entrada es un número entero positivo.
+
+
+### 3. Campo de selección obligatoria (dropdown)
+En algunos casos, es posible que necesitemos que el usuario seleccione una opción de una lista desplegable. Para asegurarnos de que se ha seleccionado una opción, podemos usar el `RequiredFieldValidator`. Aquí te dejo un ejemplo:
+
+```html
+<div class="col-md-6 mb-3">
+    <label for="exampleInputOrganizacion">Género</label>
+    <asp:DropDownList ID="ddlGenero" CssClass="form-control" runat="server" AppendDataBoundItems="True"
+        DataTextField="Text" DataValueField="Value">
+        <asp:ListItem Text="Seleccione una opción" Value=""></asp:ListItem>
+        <asp:ListItem Value="Hombre">Hombre</asp:ListItem>
+        <asp:ListItem Value="Mujer">Mujer</asp:ListItem>
+        <asp:ListItem Value="Prefiero no decirlo">Prefiero no decirlo</asp:ListItem>
+        <asp:ListItem Value="Gay">Gay</asp:ListItem>
+        <asp:ListItem Value="Lesbiana">Lesbiana</asp:ListItem>
+    </asp:DropDownList>
+    <asp:RequiredFieldValidator ID="rfvGenero" runat="server" ControlToValidate="ddlGenero"
+        ErrorMessage="Debe seleccionar una opción en el campo Género" ForeColor="Red"></asp:RequiredFieldValidator>
+</div>
+```
+Por favor, ten en cuenta que el ID del `DropDownList` debe coincidir con el de `RequiredFieldValidator`. Esto es necesario para que el validador sepa a qué `DropDownList` está vinculado.
