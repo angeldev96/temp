@@ -40,7 +40,7 @@ En algunos casos, es posible que necesitemos que el usuario seleccione una opci�
     <label for="exampleInputOrganizacion">Género</label>
     <asp:DropDownList ID="ddlGenero" CssClass="form-control" runat="server" AppendDataBoundItems="True"
         DataTextField="Text" DataValueField="Value">
-        <asp:ListItem Text="Seleccione una opción" Value=""></asp:ListItem>
+        <asp:ListItem Text="-- Seleccione una opción --" Value=""></asp:ListItem>
         <asp:ListItem Value="Hombre">Hombre</asp:ListItem>
         <asp:ListItem Value="Mujer">Mujer</asp:ListItem>
         <asp:ListItem Value="Prefiero no decirlo">Prefiero no decirlo</asp:ListItem>
