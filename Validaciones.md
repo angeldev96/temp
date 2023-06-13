@@ -1,4 +1,4 @@
-### 1.Campo que debe ser únicamente texto
+### 1. Campo que debe ser únicamente texto
 Para asegurarnos de que el usuario ingrese solamente letras en un campo (sin números ni caracteres especiales), podemos usar un combinación de `RegularExpressionValidator` y `RequiredFieldValidator` en ASP.NET. Aquí te dejo un ejemplo:
 
 ```html
