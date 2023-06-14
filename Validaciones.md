@@ -52,3 +52,10 @@ En algunos casos, es posible que necesitemos que el usuario seleccione una opci�
 </div>
 ```
 Por favor, ten en cuenta que el ID del `DropDownList` debe coincidir con el de `RequiredFieldValidator`. Esto es necesario para que el validador sepa a qué `DropDownList` está vinculado.
+
+
+### 4. Recordar que el boton debe de tener la directiva `ValidationGroup="grupoValidacion`
+```html
+<asp:Button ID="btnGuardarCambios" runat="server" class="btn btn-primary" Text="Guardar Cambios" OnClick="btnGuardarCambios_Click" ValidationGroup="grupoValidacion" />
+
+```
